@@ -7,24 +7,7 @@
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
 	<!-- Concepts -->
-	<changeSet id="postbahmni-2021-03-12-19-43" author="rbuisson">
-		<comment>
-			Set concept 'Yes' UUID
-		</comment>
-		<update tableName="concept">
-			<column name="uuid" value="ee614b97-bd12-4684-8e66-eb432191315e"/>
-			<where>concept_id='1'</where>
-		</update>
-	</changeSet>
-	<changeSet id="postbahmni-2021-03-12-19-50" author="rbuisson">
-		<comment>
-			Set concept 'No' UUID
-		</comment>
-		<update tableName="concept">
-			<column name="uuid" value="a5cc579d-f388-4067-8a95-ad932114c31f"/>
-			<where>concept_id='2'</where>
-		</update>
-	</changeSet>
+	<include file="concepts.xml"/>
 
 	<!-- Encounter Types -->
 	<changeSet id="postbahmni-2021-03-12-19-51" author="rbuisson">
