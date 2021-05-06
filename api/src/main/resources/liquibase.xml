@@ -18,7 +18,7 @@
 			Set encounter type 'ADMISSION' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="ccfbdaaf-c0fb-45ec-b4fc-958fef5c5965"/>
+			<column name="uuid" value="81da9590-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='ADMISSION'</where>
 		</update>
 	</changeSet>
@@ -27,7 +27,7 @@
 			Set encounter type 'Consultation' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="dd528487-82a5-4082-9c72-ed246bd49591"/>
+			<column name="uuid" value="81852aee-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='Consultation'</where>
 		</update>
 	</changeSet>
@@ -36,7 +36,7 @@
 			Set encounter type 'DISCHARGE' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="c521ee59-85dc-455d-ade6-969a27524594"/>
+			<column name="uuid" value="81dd3390-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='DISCHARGE'</where>
 		</update>
 	</changeSet>
@@ -45,7 +45,7 @@
 			Set encounter type 'INVESTIGATION' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="a4f57f5c-f1d5-4934-8c0d-d32083421bc8"/>
+			<column name="uuid" value="81fbaddd-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='INVESTIGATION'</where>
 		</update>
 	</changeSet>
@@ -54,7 +54,7 @@
 			Set encounter type 'LAB_RESULT' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="b3730730-c47a-46ca-ad66-9871ffb31722"/>
+			<column name="uuid" value="82024e00-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='LAB_RESULT'</where>
 		</update>
 	</changeSet>
@@ -63,7 +63,7 @@
 			Set encounter type 'Patient Document' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="89b87ad8-b9df-495c-9279-331515093d89"/>
+			<column name="uuid" value="82367e09-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='Patient Document'</where>
 		</update>
 	</changeSet>
@@ -72,7 +72,7 @@
 			Set encounter type 'RADIOLOGY' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="84fd2097-63cb-47d4-8392-d553fb6ef571"/>
+			<column name="uuid" value="81f57a25-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='RADIOLOGY'</where>
 		</update>
 	</changeSet>
@@ -81,7 +81,7 @@
 			Set encounter type 'REG' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="a7feb1a0-4bd8-48d1-acfd-ce282d139f06"/>
+			<column name="uuid" value="81888515-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='REG'</where>
 		</update>
 	</changeSet>
@@ -90,7 +90,7 @@
 			Set encounter type 'TRANSFER' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="c74fcf9d-9597-44a9-a311-c41fa98516cd"/>
+			<column name="uuid" value="81e13b91-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='TRANSFER'</where>
 		</update>
 	</changeSet>
@@ -99,68 +99,103 @@
 			Set encounter type 'VALIDATION NOTES' UUID
 		</comment>
 		<update tableName="encounter_type">
-			<column name="uuid" value="579141eb-fe07-4c3e-8a54-f10024aaa4e8"/>
+			<column name="uuid" value="8243d105-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='VALIDATION NOTES'</where>
 		</update>
 	</changeSet>
-
+	<changeSet id="postbahmni-2021-03-12-20-21" author="rbuisson">
+		<comment>
+			Set encounter type 'Cardiovascularstudy' UUID
+		</comment>
+		<update tableName="encounter_type">
+			<column name="uuid" value=" 0df61a70-5dfd-405d-aceb-ae4e39bf9e55"/>
+			<where>name='Cardiovascularstudy'</where>
+		</update>
+	</changeSet>
 	<!-- Visit Types -->
 	<changeSet id="postbahmni-2021-03-12-20-01" author="rbuisson">
 		<comment>
 			Set visit type 'LAB VISIT' UUID
 		</comment>
 		<update tableName="visit_type">
-			<column name="uuid" value="929fb1a1-d801-4b56-9d15-503685a6c49d"/>
+			<column name="uuid" value="bef32e14-3f12-11e4-adec-0800271c1b75"/>
 			<where>name='LAB VISIT'</where>
 		</update>
 	</changeSet>
 
 	<!-- Patient Identifier Types -->
-	<changeSet id="postbahmni-2021-03-12-20-02" author="rbuisson">
+	<changeSet id="postbahmni-2021-03-12-21-02" author="rbuisson">
 		<comment>
 			Set encounter type 'Patient Identifier' UUID
 		</comment>
 		<update tableName="patient_identifier_type">
-			<column name="uuid" value="cb013d56-d1e0-4a1f-8d6e-652b35ec191d"/>
+			<column name="uuid" value="81433852-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='Patient Identifier'</where>
+		</update>
+	</changeSet>
+	<changeSet id="postbahmni-2021-03-12-20-03" author="rbuisson">
+		<comment>
+			Set encounter type 'National ID' UUID
+		</comment>
+		<update tableName="patient_identifier_type">
+			<column name="uuid" value="0d2ac572-8de3-46c8-9976-1f78899c599f"/>
+			<where>name='National ID'</where>
+		</update>
+	</changeSet>
+	<changeSet id="postbahmni-2021-03-12-20-04" author="rbuisson">
+		<comment>
+			Set encounter type 'Old Identification Number' UUID
+		</comment>
+		<update tableName="patient_identifier_type">
+			<column name="uuid" value="8d79403a-c2cc-11de-8d13-0010c6dffd0f"/>
+			<where>name='Old Identification Number'</where>
+		</update>
+	</changeSet>
+	<changeSet id="postbahmni-2021-04-12-20-02" author="rbuisson">
+		<comment>
+			Set encounter type 'OpenMRS Identification Number' UUID
+		</comment>
+		<update tableName="patient_identifier_type">
+			<column name="uuid" value="8d793bee-c2cc-11de-8d13-0010c6dffd0f"/>
+			<where>name='OpenMRS Identification Number'</where>
 		</update>
 	</changeSet>
 
 	<!-- Order Types -->
 	<changeSet id="postbahmni-2021-03-25-19-01" author="reagan-meant">
 		<comment>
-			Set order type 'Radiology Order' UUID
+			Set order type 'Radiology' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="5338a5b1-2cbc-4081-9a9b-9e479e2acaad"/>
-			<where>name='Radiology Order'</where>
+			<column name="uuid" value="33a83162-8a92-11e4-977f-0800271c1b75"/>
+			<where>name='Radiology'</where>
 		</update>
 	</changeSet>
 	<changeSet id="postbahmni-2021-03-25-20-01" author="reagan-meant">
 		<comment>
-			Set order type 'Drug Order' UUID
+			Set order type 'Drug' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="16bb6bcf-2e81-4ba5-8583-ff4913201a72"/>
-			<where>name='Drug Order'</where>
+			<column name="uuid" value="8d490dfc-c2cc-11de-8d13-0010c6dffd0f"/>
+			<where>name='Drug'</where>
 		</update>
 	</changeSet>
 	<changeSet id="postbahmni-2021-03-25-21-01" author="reagan-meant">
 		<comment>
-			Set order type 'Lab Order' UUID
+			Set order type 'LabTest' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="f8ae333e-9d1a-423e-a6a8-c3a0687ebcf2"/>
-			<where>name='Lab Order'</where>
+			<column name="uuid" value="33a6291c-8a92-11e4-977f-0800271c1b75"/>
+			<where>name='LabTest'</where>
 		</update>
 	</changeSet>
 	<changeSet id="postbahmni-2021-03-25-21-17" author="reagan-meant">
 		<comment>
-			Set order type 'Test Order' UUID
+			Set order type 'Test' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="52a447d3-a64a-11e3-9aeb-50e549534c5e"/>
-			<where>name='Test Order'</where>
+			<column name="uuid" value="8d4907b2-c2cc-11de-8d13-0010c6dffd0f"/>
+			<where>name='Test'</where>
 		</update>
 	</changeSet>
 </databaseChangeLog>
