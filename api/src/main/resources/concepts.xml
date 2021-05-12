@@ -98,7 +98,7 @@
 		<comment>
 			Set concept 'Dosing Instructions' UUID
 		</comment>
-		<sql>UPDATE concept SET uuid = '81b22017-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT CONCEPT_ID from concept_name where name='Dosing Instructions');</sql>
+		<sql>UPDATE concept SET uuid = '9d86785e-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT CONCEPT_ID from concept_name where name='Dosing Instructions');</sql>
 	</changeSet>
 	<changeSet id="postbahmni-2021-03-24-00-04" author="reagan-meant">
 		<comment>
