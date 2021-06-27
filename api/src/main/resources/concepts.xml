@@ -166,6 +166,12 @@
 		</comment>
 		<sql>UPDATE concept SET uuid = 'bb62c684-3f10-11e4-adec-0800271c1b75' WHERE concept_id = (select DISTINCT CONCEPT_ID from concept_name where name='Hour(s)');</sql>
 	</changeSet>
+	<changeSet id="postbahmni-2021-03-24-01-18" author="reagan-meant">
+		<comment>
+			Set concept 'Minute(s)' UUID
+		</comment>
+		<sql>UPDATE concept SET uuid = '33bc78b1-8a92-11e4-977f-0800271c1b75' WHERE concept_id = (select DISTINCT CONCEPT_ID from concept_name where name='Minute(s)');</sql>
+	</changeSet>
 	<changeSet id="postbahmni-2021-03-24-00-19" author="reagan-meant">
 		<comment>
 			Set concept 'Week(s)' UUID
