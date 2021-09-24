@@ -9,7 +9,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>postbahmni</artifactId>
-	<version>1.2.0-GHC</version>
+	<version>1.3.0-GHC-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Post Bahmni</name>
 	<description>Bahmni post-runner module to apply corrective Liquibase changesets that straighten Bahmni non-identifiable metadata entities.</description>
